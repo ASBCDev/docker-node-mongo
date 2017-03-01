@@ -7,3 +7,9 @@ services:
       - ./:/app
     ports:
       - "9000:9000"
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
