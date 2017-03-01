@@ -1,0 +1,9 @@
+# create a docker-compose.yml file
+version: "2"
+services:
+  web:
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - "9000:9000"
